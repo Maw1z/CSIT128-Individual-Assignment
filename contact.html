@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.cdnfonts.com/css/hk-groteks" rel="stylesheet">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header>
+        <div class="leftside" style="font-size: 24px;">
+            <img src="logo/ansi_logo.svg" alt="" style="width: 40px; margin-bottom: -10px;">
+            ansi
+        </div>
+        <div class="rightside">
+            <button >
+                <a href="index.html">
+                    Home
+                </a>
+            </button>
+            <button>
+                <a href="places.html">
+                    Places
+                </a>
+            </button>
+            <button>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="headings contactmeheading">
+            <h1>
+                Contact me 
+            </h1>
+            <h1 id="rightsideh1">
+                to know more
+            </h1>
+        </div>
+        <div id="contactcontainer">
+            <div id="contactdetails">
+                <p>
+                    Call us at (+1) 123-456-789
+                </p>
+                <p>
+                    Email us at ansi@example.com
+                </p>
+                <p>
+                    or reach us at any of the socials below 
+                </p>
+                <div id="socialsdiv">
+                    <img src="socials/facebook-logo-meta-2-svgrepo-com.svg" alt="">
+                    <img src="socials/instagram-svgrepo-com.svg" alt="">
+                    <img src="socials/internet-linkedln-media-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div id="contactform">
+                <form method="post" action="mailto: testwin211@gmail.com" enctype="text/plain">
+                    <div id="contacteedetails">
+                        <input type="text" name="FullName" placeholder="Full Name">
+                        <input type="text" name="EmailAddress" placeholder="Email address">
+                    </div>
+                    <div id="contactsubject">
+                        <input type="text" name="Subject" placeholder="Subject">
+                    </div>
+                    <div id="contactmessage">
+                        <textarea name="Message" id="" cols="90" rows="7">
+                        </textarea>
+                    </div>
+                    <div id="typeandsubmit">
+                        <label>Type of message: </label>
+                        <input type="radio" name="type" value="General" checked>General
+                        <input type="radio" name="type" value="Feedback">Feedback
+                        <input type="radio" name="type" value="Question">Question
+                        <button type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

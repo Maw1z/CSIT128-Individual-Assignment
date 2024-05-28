@@ -1,0 +1,198 @@
+@keyframes slideUpChars {
+    from {
+        transform: translateY(30px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideRightHr {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+:root {
+    --bg: #F4F4F4;
+    --acc1: #E5E5E5;
+    --acc2: #D9D9D9;
+    --h1size: 48px;
+}
+
+body {
+    background-color: var(--bg);
+    font-family: 'HK Grotesk', sans-serif;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+hr {
+    animation: slideRightHr 2s forwards;
+    display: inline-block;
+}
+
+main {
+    height: 95vh;
+}
+
+.aboutme {
+    display: inline-block;
+    font-size: 0;
+}
+
+.aboutme > h1 {
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+.char-about {
+    font-size: 132px;
+    display: inline-block;
+}
+
+#a, #b, #o, #u, #t, #nbsp, #m, #e {
+    animation: slideUpChars 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#a {
+    animation-delay: 0.1s;
+}
+
+#b {
+    animation-delay: 0.2s;
+}
+
+#o {
+    animation-delay: 0.3s;
+}
+
+#u {
+    animation-delay: 0.4s;
+}
+
+#t {
+    animation-delay: 0.5s;
+} 
+
+#nbsp {
+    animation-delay: 0.6s;
+}
+
+#m {
+    animation-delay: 0.7s;
+}
+
+#e {
+    animation-delay: 0.8s;
+}
+
+.details {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detailstext {
+    background-color: var(--acc2);
+    padding: 30px;
+    height: 430px;
+    width: 600px;
+}
+
+.detailstext>h2 {
+    margin-bottom: -10px;
+    font-size: 30px;
+}
+
+.detailstext > p {
+    font-size: 24px;
+}
+
+.randomphoto > img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    height: 480px;
+    width: 950px;
+}
+
+#hobbies {
+    margin-top: 70px;
+    height: 85vh;
+}
+
+#hobbies > h1, #projects > h1 {
+    font-size: 48px;
+}
+
+#hobbiescontainer {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hobbiess {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #D9D9D9;
+    margin-top: 100px;
+    padding: 70px;
+    width: 350px;
+}
+
+
+.hobbiesimg > img {
+    width: 100px;
+}   
+
+.hobbiestext > p {
+    margin-bottom: 30px;
+}
+
+#projects {
+    margin-top: 50px;
+    height: 85vh;
+}
+
+#projectscontainer {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;    
+    border-bottom: solid 1px #646464;
+}
+
+.projectname {
+    align-self: center;
+}
+
+.projectname > a {
+    color: black;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.projectdetails > p, .projecttype > p {
+    font-size: 22px;
+}
+
+.projects:hover {
+    background-color: black;
+    color: white;
+}
+
+.projects:hover a{
+    color: white;
+}
