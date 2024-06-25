@@ -6,6 +6,7 @@
 }
 
 body {
+    background-color: var(--bg);
     font-family: 'HK Grotesk', sans-serif;
     padding-left: 70px;
     padding-right: 70px;
